@@ -31,7 +31,7 @@ setuptools.setup(
     author="Hieu Trung Dao",
     url="",
     packages=setuptools.find_packages(),
-    python_requires=">=3.8",
+    python_requires=">=3.7",
     install_requires=get_install_requirements(),
     setup_requires=["wheel"], 
     long_description=get_long_description(),
