@@ -1,0 +1,80 @@
+Slice of feature education with value Bachelors: 
+	Precision: 0.7562076749435666
+	Recall: 0.7863849765258216
+	F-beta: 0.7710011507479863
+
+Slice of feature education with value HS-grad: 
+	Precision: 0.785234899328859
+	Recall: 0.34615384615384615
+	F-beta: 0.4804928131416838
+
+Slice of feature education with value Masters: 
+	Precision: 0.8325123152709359
+	Recall: 0.8366336633663366
+	F-beta: 0.8345679012345679
+
+Slice of feature education with value Some-college: 
+	Precision: 0.6784140969162996
+	Recall: 0.5682656826568265
+	F-beta: 0.6184738955823292
+
+Slice of feature education with value Doctorate: 
+	Precision: 0.8148148148148148
+	Recall: 0.8627450980392157
+	F-beta: 0.838095238095238
+
+Slice of feature education with value Assoc-acdm: 
+	Precision: 0.8461538461538461
+	Recall: 0.6875
+	F-beta: 0.7586206896551724
+
+Slice of feature education with value 9th: 
+	Precision: 1.0
+	Recall: 0.0
+	F-beta: 0.0
+
+Slice of feature education with value Assoc-voc: 
+	Precision: 0.7777777777777778
+	Recall: 0.5526315789473685
+	F-beta: 0.6461538461538462
+
+Slice of feature education with value 11th: 
+	Precision: 1.0
+	Recall: 0.25
+	F-beta: 0.4
+
+Slice of feature education with value 5th-6th: 
+	Precision: 1.0
+	Recall: 0.0
+	F-beta: 0.0
+
+Slice of feature education with value 7th-8th: 
+	Precision: 1.0
+	Recall: 0.16666666666666666
+	F-beta: 0.2857142857142857
+
+Slice of feature education with value Prof-school: 
+	Precision: 0.8735632183908046
+	Recall: 0.9156626506024096
+	F-beta: 0.8941176470588235
+
+Slice of feature education with value 10th: 
+	Precision: 1.0
+	Recall: 0.1111111111111111
+	F-beta: 0.19999999999999998
+
+Slice of feature education with value 12th: 
+	Precision: 1.0
+	Recall: 0.2857142857142857
+	F-beta: 0.4444444444444445
+
+Slice of feature education with value 1st-4th: 
+	Precision: 1.0
+	Recall: 0.0
+	F-beta: 0.0
+
+Slice of feature education with value Preschool: 
+	Precision: 1.0
+	Recall: 1.0
+	F-beta: 1.0
+

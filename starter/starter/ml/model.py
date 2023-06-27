@@ -1,4 +1,7 @@
+from lightgbm import LGBMClassifier
 from sklearn.metrics import fbeta_score, precision_score, recall_score
+
+from starter.ml.data import process_data
 
 
 # Optional: implement hyperparameter tuning.
@@ -17,8 +20,9 @@ def train_model(X_train, y_train):
     model
         Trained machine learning model.
     """
-
-    pass
+    model = LGBMClassifier()
+    model.fit(X_train, y_train)
+    return model
 
 
 def compute_model_metrics(y, preds):
@@ -57,4 +61,26 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-    pass
+    return model.predict(X)
+
+def compute_model_slice_metrics(model, df, feature_name, encoder, lb, cat_feats, output_path="slice_output.txt"):
+    for unique_value in df[feature_name].unique():
+        slice = df[df[feature_name] == unique_value]
+        X_test, y_test, _, _ = process_data(
+            slice, 
+            cat_feats, 
+            label="salary", 
+            training=False, 
+            encoder=encoder, 
+            lb=lb
+        )
+        y_preds = inference(model, X_test)
+
+        precision, recall, fbeta = compute_model_metrics(y_test, y_preds)
+
+        with open(output_path, 'a') as f:
+            f.write(f"Slice of feature {feature_name} with value {unique_value}: \n")
+            f.write(f"\tPrecision: {precision}\n")
+            f.write(f"\tRecall: {recall}\n") 
+            f.write(f"\tF-beta: {fbeta}\n")
+            f.write("\n")
